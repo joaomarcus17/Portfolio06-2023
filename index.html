@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMS Dev</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!-- Inicío Header-->
+  <header class="banner">
+    <div class="navegacao">
+      <nav class="navLinks">
+        <div class="container">
+          <div class="container-nav">
+            <a class="nav-brand" href="index.html">
+              <img id="logo" src="/imagens/logo.png" alt="logo" width="180px" height="122px">
+            </a>
+
+            <!-- HAMBURGER LINES-->
+            <div class="menu">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div class="links">
+                <ul class="navBar" id="navBar">
+                  <li>
+                    <a class="a teste" href="index.html">Início</a>
+                  </li>
+                  <li>
+                    <a class="a teste" href="#">Sobre</a>
+                  </li>
+                  <li>
+                    <a class="a teste" href="#">Portfólio</a>
+                  </li>
+                  <li>
+                    <a class="a teste" href="#">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Fim Header -->
+
+
+  <!-- Inicío da sessão about me -->
+  <section class="sessao-about">
+    <div class="container">
+      <div class="conteudo-about">
+        <div class="imagem-about">
+          <img src="/imagens/eu.png" alt="Imagem de João Marcus">
+        </div>
+        <div class="texto-about">
+          <div class="texto">
+            <h2 style="color:#dddddd;">Sobre mim</h2>
+            <p>Olá, me chamo João Marcus</p>
+            <p>Sou um desenvolvedor web apaixonado por criar soluções digitais inovadoras. Tenho experiência em desenvolvimento front-end utilizando HTML, CSS e JavaScript.</p>
+            <p>Estou constantemente buscando aprender e aprimorar minhas habilidades, explorando novas tecnologias e frameworks para expandir meu conhecimento.</p>
+            <p>Se você está procurando um desenvolvedor comprometido, criativo e motivado, entre em contato comigo para discutir como posso ajudar em seu próximo projeto.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Início da sessão Portfólio -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="sessao-port">
+        <h2 style="color: #dddddd;"> Portfólio</h2>
+        <div class="portfolio-grid">
+          <div class="project">
+            <img src="caminho-da-imagem-projeto1.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição breve do projeto 1</p>
+            <a href="pagina-projeto1.html">Saiba mais</a>
+          </div>
+          <div class="project">
+            <img src="caminho-da-imagem-projeto2.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição breve do projeto 2</p>
+            <a href="pagina-projeto2.html">Saiba mais</a>
+          </div>
+          <div class="project">
+            <img src="caminho-da-imagem-projeto3.jpg" alt="Projeto 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição breve do projeto 3</p>
+            <a href="pagina-projeto3.html">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fim da sessão Portfólio -->
+  <!-- Fim da sessão about me -->
+  <!--Scripts da pagina-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('open');
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

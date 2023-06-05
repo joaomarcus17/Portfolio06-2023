@@ -7,7 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JMS Dev</title>
 
+  <!--Icone do site-->
+  <link rel="shortcut icon" href="/imagens/jm (1).png">
+
   <link rel="stylesheet" href="/css/style.css">
+  <script>
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") {
+        // O usuário mudou para outra aba ou minimizou a janela
+        document.title = ":( Volte aqui!";
+      } else {
+        // O usuário voltou para a aba original
+        document.title = "Seja bem-vindo de volta!";
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -18,9 +32,8 @@
         <div class="container">
           <div class="container-nav">
             <a class="nav-brand" href="index.html">
-              <img id="logo" src="/imagens/logo.png" alt="logo" width="100%" height="122px">
+              <img id="logo" src="/imagens/logo.png" alt="logo" class="logo">
             </a>
-
             <!-- HAMBURGER LINES-->
             <div class="menu">
               <div class="hamburger">
@@ -64,8 +77,7 @@
         <div class="texto-about">
           <div class="texto">
             <h2 style="color:#dddddd;">Sobre mim</h2>
-            <p>Olá, me chamo João Marcus</p>
-            <p>Sou um desenvolvedor web apaixonado por criar soluções digitais inovadoras. Tenho experiência em desenvolvimento front-end utilizando HTML, CSS e JavaScript.</p>
+            <p>Olá, me chamo João Marcus, sou um desenvolvedor web apaixonado por criar soluções digitais inovadoras. Tenho experiência em desenvolvimento front-end utilizando HTML, CSS e JavaScript.</p>
             <p>Estou constantemente buscando aprender e aprimorar minhas habilidades, explorando novas tecnologias e frameworks para expandir meu conhecimento.</p>
             <p>Se você está procurando um desenvolvedor comprometido, criativo e motivado, entre em contato comigo para discutir como posso ajudar em seu próximo projeto.</p>
           </div>
@@ -90,14 +102,14 @@
           <div class="project">
             <img src="/imagens/labarra.png" alt="Projeto 2">
             <h3>LABARRA</h3>
-            <p>Bem-vindo ao LABARRA, um restaurante que combina a arte culinária com um ambiente acolhedor e contemporâneo. Experimente sabores incríveis e pratos cuidadosamente elaborados, enquanto desfruta de um ambiente elegante. Descubra a experiência gastronômica que estamos prontos para oferecer. </p>
+            <p>Bem-vindo ao LABARRA, um restaurante que combina a arte culinária com um ambiente acolhedor e contemporâneo. Experimente sabores incríveis e pratos cuidadosamente elaborados, enquanto desfruta de um ambiente elegante. Venha nos conhecer. </p>
             <a href="pagina-projeto2.html">Saiba mais</a>
           </div>
           <div class="project">
             <img src="/imagens/Screenshot API.png" alt="Projeto 3">
             <h3>RICK AND MORTY</h3>
             <p>Prepare-se para embarcar em uma aventura interdimensional com Rick and Morty. Neste projeto, mergulhamos no mundo caótico e divertido dessa famosa série animada americana, explorando sua riqueza de personagens e episódios.</p>
-            <a href="pagina-projeto3.html">Saiba mais</a>
+            <a href="https://gqcy7y.csb.app/" target="_blank">Saiba mais</a>
           </div>
         </div>
       </div>
@@ -106,7 +118,7 @@
   <!-- Fim da sessão Portfólio -->
   <!-- Início da sessão Contato -->
 
-  <section>
+  <footer>
     <div class="container">
       <div class="contato">
         <div class="form-contato">
@@ -118,35 +130,47 @@
             <button type="submit" class="botao"> Enviar </button>
           </form>
         </div>
-        <div class=" icones-contato">
-          <div class="icon">
-            <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/instagram.png" alt=""></a>
-            <p>Instagram</p>
+        <div class="icones-contato">
+          <div class="icon-pai">
+            <div class="icon">
+              <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/instagram.png" alt=""></a>
+              <p>Instagram</p>
+            </div>
+            <div class="icon">
+              <a href="https://www.facebook.com/joaomarcus.silva.1/" target="_blank"><img src="/imagens/facebook.png" alt=""></a>
+              <p>Facebook</p>
+            </div>
+            <div class="icon">
+              <a href="https://github.com/joaomarcus17" target="_blank"><img src="/imagens/github (1).png" alt=""></a>
+              <p>GitHub</p>
+            </div>
           </div>
-          <div class="icon">
-            <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/facebook.png" alt=""></a>
-            <p>Facebook</p>
-          </div>
-          <div class="icon">
-            <a href="https://github.com/joaomarcus17" target="_blank"><img src="/imagens/github (1).png" alt=""></a>
-            <p>GitHub</p>
-          </div>
-          <div class="icon">
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-marcus-silva-051a771a8/" target="_blank"><img src="/imagens/linkedin.png" alt=""></a>
-            <p>Linkedin</p>
-          </div>
-          <div class="icon">
-            <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/whatsapp.png" alt=""></a>
-            <p>Whatsapp</p>
-          </div>
-          <div class="icon">
-            <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/discordia.png" alt=""></a>
-            <p>Discord</p>
+          <div class="icon-pai">
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-marcus-silva-051a771a8/" target="_blank"><img src="/imagens/linkedin.png" alt=""></a>
+              <p>Linkedin</p>
+            </div>
+            <div class="icon">
+              <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/whatsapp.png" alt=""></a>
+              <p>Whatsapp</p>
+            </div>
+            <div class="icon">
+              <a href="https://www.instagram.com/joaomarcus_11/" target="_blank"><img src="/imagens/discordia.png" alt=""></a>
+              <p>Discord</p>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
-  </section>
+  </footer>
+
+
+  <div class="container">
+    <div class="copyright">
+      © Todos os Direitos Reservados - JMD
+    </div>
+  </div>
 
   <!-- Fim Início da sessão Contato -->
   <!--Scripts da pagina-->

@@ -516,11 +516,77 @@ textarea {
   color: #c0c0c0;
 }
 
-
 .icon-pai {
   display: flex;
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+/* Estilos da seção de habilidades */
+.sessao-habilidades {
+  padding: 40px;
+}
+
+.conteudo-habilidades {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.habilidades-grid {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.habilidades-grid h3 {
+  font-size: 24px;
+  color: #fffcfc;
+  margin-bottom: 10px;
+  transform: rotate(-90deg);
+}
+
+.habilidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.habilidade h4 {
+  font-size: 18px;
+  color: #ababab;
+  margin: 0;
+}
+
+.habilidades-global {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 780px) {
+  .habilidades-grid {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
 }
